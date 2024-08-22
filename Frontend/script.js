@@ -12,8 +12,7 @@ function hideLoader(loaderId) {
 }
 
 document.getElementById("filterButton").addEventListener("click", function () {
-  const apiUrl =
-    "https://honesys-modern-bakery-7ok59vwqc-kilroy007s-projects.vercel.app/filter_data";
+  const apiUrl = "https://honesys-modern-bakery.onrender.com/filter_data";
 
   const data = {
     file_path: document.getElementById("file_path").value,
@@ -80,8 +79,7 @@ document.getElementById("filterButton").addEventListener("click", function () {
 document
   .getElementById("transformButton")
   .addEventListener("click", function () {
-    const apiUrl =
-      "https://honesys-modern-bakery-7ok59vwqc-kilroy007s-projects.vercel.app/transform_data";
+    const apiUrl = "https://honesys-modern-bakery.onrender.com/transform_data";
 
     const data = {
       filtered_data: filterAPIResponse,
@@ -128,8 +126,7 @@ document
 document
   .getElementById("forecastButton")
   .addEventListener("click", function () {
-    const apiUrl =
-      "https://honesys-modern-bakery-7ok59vwqc-kilroy007s-projects.vercel.app/forecast";
+    const apiUrl = "https://honesys-modern-bakery.onrender.com/forecast";
 
     const data = {
       aggregated_data: transformAPIResponse,
